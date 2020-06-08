@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Website Detection</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="login">
+	<h1>PHISHING WEBSITE DETECTION</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('y_predict')}}"method="post">
+    	<input class="ip" type="text" name="url1" placeholder="Domain has IP type -1 else type 1" required="required" /> 
+        
+        <input class="length" type="text" name="url2" placeholder="URL characters<54 type 1, >=54 and <=75 type 0,else type -1" required="required" />
+        
+        <input class="tiny_url" type="text" name="url3" placeholder="Tiny URL,type -1, else type 1" required="required" />
+        <input class="at_symbol" type="text" name="url4" placeholder="URL has @ symbol: type -1,else type 1" required="required" />
+        <input class="double_slash" type="text" name="url5" placeholder="position of // is greater than 7, type -1 else type 1" required="required" />
+        <input class="prefix_suffix" type="text" name="url6" placeholder="domain name includes (-) symbol, type -1,else type 1" required="required" />
+        <input class="sub_domain" type="text" name="url7" placeholder="one dot in domain part,type 1, two dots; type 0, else type -1" required="required" />
+        <input class="https" type="text" name="url8" placeholder="https used, type 1, else type -1" required="required" />
+        <input class="domain_reg" type="text" name="url9" placeholder="domain expires on less than 1 year,else type -1" required="required" />
+        <input class="favicon" type="text" name="url10" placeholder="favicon loaded from external domain,type -1,else type 1" required="required" />
+        <input class="standard_port" type="text" name="url11" placeholder="Type -1 or 1" required="required" />
+        <input class="https_domain" type="text" name="url12" placeholder="https found in domain part,type -1,else type 1" required="required" />
+        <input class="request_url" type="text" name="url13" placeholder="% of request URL <22%,type 1, >=22% and <61%,type -1,else type 0" required="required" />
+        <input class="anchor" type="text" name="url14" placeholder="% <31%,type 1 else type 0 or -1" required="required" />
+        <input class="links" type="text" name="url15" placeholder="% <25,type 1,>=25 and <=81,type 0,else type -1" required="required" />
+        <input class="sfh" type="text" name="url16" placeholder="sfh is empty, type -1,sfh refers to a diff. domain,type 0,else type 1" required="required" />
+        <input class="email_info" type="text" name="url17" placeholder="mail() or mailto() used, type -1, else type 1" required="required" />
+        <input class="abnormal_url" type="text" name="url18" placeholder="host name not in URL,type -1, else type 1" required="required" />
+        <input class="web_forward" type="text" name="url19" placeholder="of RedirectPage <= 1,type 1,else type -1" required="required" />
+        <input class="on_mouse" type="text" name="url20" placeholder="onMouseover changes status bar, type -1,else type 1" required="required" />
+        <input class="disable_right" type="text" name="url21" placeholder="right-click disabled, type -1 else type 1" required="required" />
+        <input class="pop_up" type="text" name="url22" placeholder="pop up contains text fields, type -1 else type 1" required="required" />
+        <input class="iframe" type="text" name="url23" placeholder="using iframe,type -1,else type 1" required="required" />
+        <input class="domain_age" type="text" name="url24" placeholder="age of domain >=6,type 1,else type -1" required="required" />
+        <input class="dns_rec" type="text" name="url25" placeholder="no DNS record,type -1,else type 1" required="required" />
+        <input class="web_traffic" type="text" name="url26" placeholder="Type 1 or -1" required="required" />
+        <input class="page_rank" type="text" name="url27" placeholder="page rank <0.2,type -1,else type 1" required="required" />
+        <input class="google_index" type="text" name="url28" placeholder="webpage indexed by Google,type 1,else type -1" required="required" />
+        <input class="links_to_page" type="text" name="url29" placeholder="link pointing to webpage=0,type -1,else type 1" required="required" />
+    
+         
+        
+        
+        <button type="submit" class="btn">DETECT</button>
+    
+    </form>
+
+   <br>
+   <br>
+   <div class=output>
+   {{ prediction_text }}
+   </div>
+  </div>
+</body>
+</html>
