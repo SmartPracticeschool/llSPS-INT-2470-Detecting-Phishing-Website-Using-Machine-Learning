@@ -1,0 +1,172 @@
+body{
+	background-image: url("img1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+h1{
+	margin-left: 500px;
+    color: black;
+    font-family: sans-serif;
+    margin-top:80px;
+
+}
+
+.ip{
+    margin-left:400px;
+    margin-top:80px;
+    width:700px;
+}
+.length{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.tiny_url{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.at_symbol{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.double_slash{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.prefix_suffix{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.sub_domain{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.https{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.domain_reg{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.favicon{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.standard_port{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.https_domain{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.request_url{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.anchor{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.links{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.sfh{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.email_info{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.abnormal_url{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.web_forward{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.on_mouse{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.disable_right{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.pop_up{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.iframe{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.domain_age{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.dns_rec{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.web_traffic{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.web_traffic{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.page_rank{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.google_index{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.links_to_page{
+    margin-left:400px;
+    margin-top:10px;
+    width:700px;
+}
+.output{
+    margin-left:400px;
+    margin-top:0px;
+    font-size: 40px;
+    
+}
